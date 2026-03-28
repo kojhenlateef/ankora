@@ -84,9 +84,11 @@ export default function OnboardingPage() {
 
       if (error) throw error;
 
-      router.push('/dashboard');
-    } catch (error) {
+      // Force a hard refresh to dashboard
+      window.location.href = '/dashboard';
+    } catch (error: any) {
       console.error('Error updating profile:', error);
+      alert(error.message || 'Ein Fehler ist aufgetreten');
     } finally {
       setLoading(false);
     }
