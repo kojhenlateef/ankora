@@ -3,7 +3,6 @@ import { Link } from '@/i18n/routing';
 import { locales } from '@/lib/locale';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import Image from 'next/image';
 
 export default function LandingPage({
   params,
@@ -40,12 +39,10 @@ export default function LandingPage({
                   <CardContent className="p-6 text-center">
                     <div className="mb-2 flex items-center justify-center h-12">
                       {'flagImage' in locale && locale.flagImage ? (
-                        <Image
+                        <img
                           src={locale.flagImage}
                           alt={locale.name}
-                          width={48}
-                          height={32}
-                          className="object-contain"
+                          className="h-8 w-auto object-contain"
                         />
                       ) : (
                         <div className="text-4xl">{locale.flag}</div>
