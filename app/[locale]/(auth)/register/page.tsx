@@ -45,17 +45,14 @@ export default function RegisterPage() {
       if (authError) throw authError;
 
       if (authData.user) {
-        // Create profile
-        const { error: profileError } = await supabase
-          .from('profiles')
-          .insert({
-            id: authData.user.id,
-            email: authData.user.email!,
-            language: locale,
-            onboarding_done: false,
-          });
-
-        if (profileError) throw profileError;
+        // Profile is automatically created by Supabase trigger
+        // Update language preference if different from default
+        if (locale !== 'de') {
+          await supabase
+            .from('profiles')
+            .update({ language: locale })
+            .eq('id', authData.user.id);
+        }
 
         // Redirect to onboarding
         router.push('/onboarding');
