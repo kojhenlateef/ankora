@@ -1,0 +1,79 @@
+{
+  "landing": {
+    "title": "Ankora'ya Hoş Geldiniz",
+    "subtitle": "Almanya'daki idari işlemler için dijital arkadaşınız",
+    "selectLanguage": "Dilinizi seçin",
+    "getStarted": "Başlayın",
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol"
+  },
+  "auth": {
+    "email": "E-posta",
+    "password": "Şifre",
+    "confirmPassword": "Şifreyi Onayla",
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol",
+    "logout": "Çıkış Yap",
+    "noAccount": "Hesabınız yok mu?",
+    "hasAccount": "Zaten hesabınız var mı?",
+    "registerLink": "Şimdi kayıt olun",
+    "loginLink": "Buradan giriş yapın",
+    "loginSuccess": "Başarıyla giriş yapıldı!",
+    "registerSuccess": "Başarıyla kayıt olundu! Lütfen giriş yapın."
+  },
+  "onboarding": {
+    "title": "Hoş geldiniz! Profilinizi oluşturalım",
+    "step": "Adım",
+    "of": "/",
+    "next": "İleri",
+    "back": "Geri",
+    "finish": "Bitir",
+    "language": {
+      "title": "Dil",
+      "description": "Tercih ettiğiniz dili seçin"
+    },
+    "status": {
+      "title": "Durum",
+      "description": "Durumunuzu en iyi hangisi tanımlıyor?",
+      "asylum": "İltica Başvurusu",
+      "euCitizen": "AB Vatandaşı",
+      "skilledWorker": "Kalifiye İşçi",
+      "student": "Öğrenci"
+    },
+    "location": {
+      "title": "Konum",
+      "description": "Nerede yaşıyorsunuz?",
+      "cityPlz": "Şehir / Posta Kodu"
+    },
+    "goal": {
+      "title": "Hedef",
+      "description": "Sırada ne başarmak istiyorsunuz?",
+      "placeholder": "örn. Oturma izni başvurusu, dil kursu bul..."
+    }
+  },
+  "dashboard": {
+    "welcome": "Tekrar hoş geldiniz",
+    "yourProgress": "İlerlemeniz",
+    "checklist": "Kontrol Listesi",
+    "viewAll": "Tümünü Görüntüle",
+    "noItems": "Öğe bulunamadı"
+  },
+  "checklist": {
+    "title": "Resmi İşlemler Kontrol Listesi",
+    "completed": "Tamamlandı",
+    "pending": "Beklemede",
+    "of": "/",
+    "markComplete": "Tamamlandı olarak işaretle",
+    "markIncomplete": "Tamamlanmadı olarak işaretle",
+    "progress": "İlerleme"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "search": "Ara"
+  }
+}

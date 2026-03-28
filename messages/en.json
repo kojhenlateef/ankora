@@ -1,0 +1,79 @@
+{
+  "landing": {
+    "title": "Welcome to Ankora",
+    "subtitle": "Your digital companion for administrative matters in Germany",
+    "selectLanguage": "Choose your language",
+    "getStarted": "Get Started",
+    "login": "Login",
+    "register": "Register"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "registerLink": "Register now",
+    "loginLink": "Login here",
+    "loginSuccess": "Successfully logged in!",
+    "registerSuccess": "Successfully registered! Please log in."
+  },
+  "onboarding": {
+    "title": "Welcome! Let's set up your profile",
+    "step": "Step",
+    "of": "of",
+    "next": "Next",
+    "back": "Back",
+    "finish": "Finish",
+    "language": {
+      "title": "Language",
+      "description": "Choose your preferred language"
+    },
+    "status": {
+      "title": "Status",
+      "description": "What best describes your situation?",
+      "asylum": "Asylum Seeker",
+      "euCitizen": "EU Citizen",
+      "skilledWorker": "Skilled Worker",
+      "student": "Student"
+    },
+    "location": {
+      "title": "Location",
+      "description": "Where do you live?",
+      "cityPlz": "City / Postal Code"
+    },
+    "goal": {
+      "title": "Goal",
+      "description": "What would you like to achieve next?",
+      "placeholder": "e.g. Apply for residence permit, find language course..."
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome back",
+    "yourProgress": "Your Progress",
+    "checklist": "Checklist",
+    "viewAll": "View All",
+    "noItems": "No items found"
+  },
+  "checklist": {
+    "title": "Authority Checklist",
+    "completed": "Completed",
+    "pending": "Pending",
+    "of": "of",
+    "markComplete": "Mark as complete",
+    "markIncomplete": "Mark as incomplete",
+    "progress": "Progress"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search"
+  }
+}

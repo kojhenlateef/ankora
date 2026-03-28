@@ -1,0 +1,79 @@
+{
+  "landing": {
+    "title": "Willkommen bei Ankora",
+    "subtitle": "Dein digitaler Begleiter für behördliche Angelegenheiten in Deutschland",
+    "selectLanguage": "Wähle deine Sprache",
+    "getStarted": "Jetzt starten",
+    "login": "Anmelden",
+    "register": "Registrieren"
+  },
+  "auth": {
+    "email": "E-Mail",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "logout": "Abmelden",
+    "noAccount": "Noch kein Konto?",
+    "hasAccount": "Bereits ein Konto?",
+    "registerLink": "Jetzt registrieren",
+    "loginLink": "Hier anmelden",
+    "loginSuccess": "Erfolgreich angemeldet!",
+    "registerSuccess": "Erfolgreich registriert! Bitte melde dich an."
+  },
+  "onboarding": {
+    "title": "Willkommen! Lass uns dein Profil einrichten",
+    "step": "Schritt",
+    "of": "von",
+    "next": "Weiter",
+    "back": "Zurück",
+    "finish": "Fertig",
+    "language": {
+      "title": "Sprache",
+      "description": "Wähle deine bevorzugte Sprache"
+    },
+    "status": {
+      "title": "Status",
+      "description": "Was beschreibt deine Situation am besten?",
+      "asylum": "Asylverfahren",
+      "euCitizen": "EU-Bürger",
+      "skilledWorker": "Fachkraft",
+      "student": "Student"
+    },
+    "location": {
+      "title": "Standort",
+      "description": "Wo wohnst du?",
+      "cityPlz": "Stadt / PLZ"
+    },
+    "goal": {
+      "title": "Ziel",
+      "description": "Was möchtest du als nächstes erreichen?",
+      "placeholder": "z.B. Aufenthaltstitel beantragen, Sprachkurs finden..."
+    }
+  },
+  "dashboard": {
+    "welcome": "Willkommen zurück",
+    "yourProgress": "Dein Fortschritt",
+    "checklist": "Checkliste",
+    "viewAll": "Alle anzeigen",
+    "noItems": "Keine Einträge gefunden"
+  },
+  "checklist": {
+    "title": "Behörden-Checkliste",
+    "completed": "Erledigt",
+    "pending": "Ausstehend",
+    "of": "von",
+    "markComplete": "Als erledigt markieren",
+    "markIncomplete": "Als unerledigt markieren",
+    "progress": "Fortschritt"
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "search": "Suchen"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "landing": {
+    "title": "به آنکورا خوش آمدید",
+    "subtitle": "همراه دیجیتال شما برای امور اداری در آلمان",
+    "selectLanguage": "زبان خود را انتخاب کنید",
+    "getStarted": "شروع کنید",
+    "login": "ورود",
+    "register": "ثبت نام"
+  },
+  "auth": {
+    "email": "ایمیل",
+    "password": "رمز عبور",
+    "confirmPassword": "تایید رمز عبور",
+    "login": "ورود",
+    "register": "ثبت نام",
+    "logout": "خروج",
+    "noAccount": "حساب کاربری ندارید؟",
+    "hasAccount": "قبلاً حساب کاربری دارید؟",
+    "registerLink": "اکنون ثبت نام کنید",
+    "loginLink": "از اینجا وارد شوید",
+    "loginSuccess": "با موفقیت وارد شدید!",
+    "registerSuccess": "ثبت نام با موفقیت انجام شد! لطفاً وارد شوید."
+  },
+  "onboarding": {
+    "title": "خوش آمدید! بیایید پروفایل شما را تنظیم کنیم",
+    "step": "مرحله",
+    "of": "از",
+    "next": "بعدی",
+    "back": "قبلی",
+    "finish": "پایان",
+    "language": {
+      "title": "زبان",
+      "description": "زبان مورد نظر خود را انتخاب کنید"
+    },
+    "status": {
+      "title": "وضعیت",
+      "description": "کدام بهترین توصیف وضعیت شماست؟",
+      "asylum": "متقاضی پناهندگی",
+      "euCitizen": "شهروند اتحادیه اروپا",
+      "skilledWorker": "کارگر ماهر",
+      "student": "دانشجو"
+    },
+    "location": {
+      "title": "موقعیت",
+      "description": "کجا زندگی می کنید؟",
+      "cityPlz": "شهر / کد پستی"
+    },
+    "goal": {
+      "title": "هدف",
+      "description": "چه چیزی می خواهید بعداً به دست آورید؟",
+      "placeholder": "مثال: درخواست اجازه اقامت، یافتن دوره زبان..."
+    }
+  },
+  "dashboard": {
+    "welcome": "خوش آمدید",
+    "yourProgress": "پیشرفت شما",
+    "checklist": "لیست وظایف",
+    "viewAll": "مشاهده همه",
+    "noItems": "موردی یافت نشد"
+  },
+  "checklist": {
+    "title": "لیست امور اداری",
+    "completed": "تکمیل شده",
+    "pending": "در انتظار",
+    "of": "از",
+    "markComplete": "علامت زدن به عنوان تکمیل شده",
+    "markIncomplete": "علامت زدن به عنوان تکمیل نشده",
+    "progress": "پیشرفت"
+  },
+  "common": {
+    "loading": "در حال بارگذاری...",
+    "error": "خطایی رخ داد",
+    "save": "ذخیره",
+    "cancel": "لغو",
+    "delete": "حذف",
+    "edit": "ویرایش",
+    "search": "جستجو"
+  }
+}

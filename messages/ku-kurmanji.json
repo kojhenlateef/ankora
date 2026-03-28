@@ -1,0 +1,79 @@
+{
+  "landing": {
+    "title": "Bi xêr hatî Ankora",
+    "subtitle": "Hevkarê te yê dîjîtal ji bo karûbarên îdarî li Almanyayê",
+    "selectLanguage": "Zimanê xwe hilbijêre",
+    "getStarted": "Dest pê bike",
+    "login": "Têketin",
+    "register": "Qeydkirin"
+  },
+  "auth": {
+    "email": "E-posta",
+    "password": "Şîfre",
+    "confirmPassword": "Şîfreyê piştrast bike",
+    "login": "Têketin",
+    "register": "Qeydkirin",
+    "logout": "Derkevîn",
+    "noAccount": "Hêjmarê te tune ye?",
+    "hasAccount": "Berê hêjmarê te heye?",
+    "registerLink": "Niha qeyd bibe",
+    "loginLink": "Li vir têkeve",
+    "loginSuccess": "Bi serfirazî têket!",
+    "registerSuccess": "Bi serfirazî qeyd bû! Ji kerema xwe têkeve."
+  },
+  "onboarding": {
+    "title": "Bi xêr hatî! De bila profîla xwe amade bikin",
+    "step": "Gav",
+    "of": "ji",
+    "next": "Pêş",
+    "back": "Paş",
+    "finish": "Qedandin",
+    "language": {
+      "title": "Ziman",
+      "description": "Zimanê xwe yê bijartî hilbijêre"
+    },
+    "status": {
+      "title": "Rewş",
+      "description": "Kîjan rewşa te baştir diyar dike?",
+      "asylum": "Daxwazkarê penaberiyê",
+      "euCitizen": "Welatiyê EU",
+      "skilledWorker": "Karkerê pisporî",
+      "student": "Xwendekar"
+    },
+    "location": {
+      "title": "Cih",
+      "description": "Tu li ku dijî?",
+      "cityPlz": "Bajar / Koda posteyê"
+    },
+    "goal": {
+      "title": "Armanc",
+      "description": "Tu dixwazî paşê çi bi dest bixînî?",
+      "placeholder": "mînak: Daxwaza destûra niştecihbûnê, dersên zimanê bibîne..."
+    }
+  },
+  "dashboard": {
+    "welcome": "Bi xêr hatî paş",
+    "yourProgress": "Pêşkeftina te",
+    "checklist": "Lîsteya kontrolkirinê",
+    "viewAll": "Hemûyan bibîne",
+    "noItems": "Tiştek nehat dîtin"
+  },
+  "checklist": {
+    "title": "Lîsteya karûbarên fermî",
+    "completed": "Qediya",
+    "pending": "Li benda",
+    "of": "ji",
+    "markComplete": "Wekî qediya nîşan bike",
+    "markIncomplete": "Wekî neqediya nîşan bike",
+    "progress": "Pêşketin"
+  },
+  "common": {
+    "loading": "Tê barkirin...",
+    "error": "Xeletî çêbû",
+    "save": "Tomarkirin",
+    "cancel": "Betal kirin",
+    "delete": "Jêbirin",
+    "edit": "Guhertin",
+    "search": "Lêgerîn"
+  }
+}
