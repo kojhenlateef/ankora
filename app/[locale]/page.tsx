@@ -42,7 +42,7 @@ export default function LandingPage({
                         <img
                           src={locale.flagImage}
                           alt={locale.name}
-                          className="h-8 w-auto object-contain"
+                          className="h-6 w-auto object-contain"
                         />
                       ) : (
                         <div className="text-4xl">{locale.flag}</div>

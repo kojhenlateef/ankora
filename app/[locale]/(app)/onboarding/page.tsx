@@ -151,7 +151,7 @@ export default function OnboardingPage() {
                           <img
                             src={loc.flagImage}
                             alt={loc.name}
-                            className="h-7 w-auto object-contain"
+                            className="h-5 w-auto object-contain"
                           />
                         ) : (
                           <div className="text-3xl">{loc.flag}</div>
