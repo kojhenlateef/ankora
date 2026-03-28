@@ -3,6 +3,7 @@ import { Link } from '@/i18n/routing';
 import { locales } from '@/lib/locale';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import Image from 'next/image';
 
 export default function LandingPage({
   params,
@@ -37,7 +38,19 @@ export default function LandingPage({
               <Link key={locale.code} href="/" locale={locale.code as any}>
                 <Card className="hover:shadow-lg transition-shadow cursor-pointer border-2 hover:border-primary">
                   <CardContent className="p-6 text-center">
-                    <div className="text-4xl mb-2">{locale.flag}</div>
+                    <div className="mb-2 flex items-center justify-center h-12">
+                      {'flagImage' in locale && locale.flagImage ? (
+                        <Image
+                          src={locale.flagImage}
+                          alt={locale.name}
+                          width={48}
+                          height={32}
+                          className="object-contain"
+                        />
+                      ) : (
+                        <div className="text-4xl">{locale.flag}</div>
+                      )}
+                    </div>
                     <div className="font-medium text-gray-900">
                       {locale.name}
                     </div>

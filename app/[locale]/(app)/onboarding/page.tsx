@@ -10,6 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
+import Image from 'next/image';
 
 const STATUS_OPTIONS = ['asylum', 'euCitizen', 'skilledWorker', 'student'] as const;
 
@@ -146,7 +147,19 @@ export default function OnboardingPage() {
                           : 'border-gray-200 hover:border-gray-300'
                       }`}
                     >
-                      <div className="text-3xl mb-1">{loc.flag}</div>
+                      <div className="mb-1 flex items-center justify-center h-10">
+                        {'flagImage' in loc && loc.flagImage ? (
+                          <Image
+                            src={loc.flagImage}
+                            alt={loc.name}
+                            width={40}
+                            height={27}
+                            className="object-contain"
+                          />
+                        ) : (
+                          <div className="text-3xl">{loc.flag}</div>
+                        )}
+                      </div>
                       <div className="text-sm font-medium">{loc.name}</div>
                     </button>
                   ))}
