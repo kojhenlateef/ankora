@@ -1,7 +1,6 @@
 import { redirect } from 'next/navigation';
-import { useTranslations } from 'next-intl';
 import { createServerSupabaseClient } from '@/lib/supabase/server';
-import { DashboardClient } from './DashboardClient';
+import { NewDashboardClient } from './NewDashboardClient';
 
 export default async function DashboardPage({
   params,
@@ -41,7 +40,7 @@ export default async function DashboardPage({
     .eq('user_id', user.id);
 
   return (
-    <DashboardClient
+    <NewDashboardClient
       profile={profile}
       checklistItems={checklistItems || []}
       userProgress={userProgress || []}
