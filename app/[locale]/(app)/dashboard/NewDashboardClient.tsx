@@ -4,9 +4,16 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { useRouter } from '@/i18n/routing';
 import { createClient } from '@/lib/supabase/client';
+import { locales } from '@/lib/locale';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 import {
   LogOut,
   User,
@@ -18,7 +25,11 @@ import {
   Ticket,
   Edit,
   Plus,
-  ExternalLink
+  ExternalLink,
+  Globe,
+  MessageCircle,
+  Phone,
+  Mail
 } from 'lucide-react';
 
 type Profile = {
@@ -96,6 +107,12 @@ export function NewDashboardClient({
     return statusMap[status] || status;
   };
 
+  const currentLocale = locales.find(l => l.code === locale) || locales[0];
+
+  const handleLanguageChange = (newLocale: string) => {
+    router.push('/dashboard', { locale: newLocale as any });
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -109,10 +126,54 @@ export function NewDashboardClient({
                 <p className="text-sm text-gray-500">{t('dashboard.welcome')}</p>
               </div>
             </div>
-            <Button variant="outline" onClick={handleLogout}>
-              <LogOut className="w-4 h-4 mr-2" />
-              {t('auth.logout')}
-            </Button>
+            <div className="flex items-center gap-2">
+              {/* Language Switcher */}
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="outline" size="sm">
+                    <div className="flex items-center gap-2">
+                      {'flagImage' in currentLocale && currentLocale.flagImage ? (
+                        <img
+                          src={currentLocale.flagImage}
+                          alt={currentLocale.name}
+                          className="h-4 w-auto object-contain"
+                        />
+                      ) : (
+                        <span className="text-base">{currentLocale.flag}</span>
+                      )}
+                      <Globe className="w-4 h-4" />
+                    </div>
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-48">
+                  {locales.map((loc) => (
+                    <DropdownMenuItem
+                      key={loc.code}
+                      onClick={() => handleLanguageChange(loc.code)}
+                      className="cursor-pointer"
+                    >
+                      <div className="flex items-center gap-3 w-full">
+                        {'flagImage' in loc && loc.flagImage ? (
+                          <img
+                            src={loc.flagImage}
+                            alt={loc.name}
+                            className="h-4 w-auto object-contain"
+                          />
+                        ) : (
+                          <span className="text-lg">{loc.flag}</span>
+                        )}
+                        <span>{loc.name}</span>
+                      </div>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+
+              <Button variant="outline" onClick={handleLogout}>
+                <LogOut className="w-4 h-4 mr-2" />
+                {t('auth.logout')}
+              </Button>
+            </div>
           </div>
         </div>
       </header>
@@ -311,6 +372,104 @@ export function NewDashboardClient({
                 <CreditCard className="w-12 h-12 mx-auto mb-3 text-gray-300" />
                 <p className="text-sm">Noch keine Bankkonten hinzugefügt</p>
                 <p className="text-xs mt-1">Klicke auf "Hinzufügen" um ein Konto zu speichern</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Support Section */}
+          <Card className="lg:col-span-2">
+            <CardHeader>
+              <CardTitle className="flex items-center">
+                <MessageCircle className="w-5 h-5 mr-2 text-primary" />
+                Support & Hilfe
+              </CardTitle>
+              <CardDescription>
+                Sprich mit echten Menschen - wir helfen dir bei deinen Fragen
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {/* Phone Support */}
+                <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="p-2 bg-blue-100 rounded-full">
+                      <Phone className="w-5 h-5 text-blue-600" />
+                    </div>
+                    <h4 className="font-semibold text-blue-900">Telefonische Beratung</h4>
+                  </div>
+                  <p className="text-sm text-blue-800 mb-3">
+                    Montag - Freitag: 9:00 - 18:00 Uhr
+                  </p>
+                  <a
+                    href="tel:+491234567890"
+                    className="text-blue-600 font-medium hover:underline"
+                  >
+                    +49 123 456 7890
+                  </a>
+                </div>
+
+                {/* Email Support */}
+                <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="p-2 bg-green-100 rounded-full">
+                      <Mail className="w-5 h-5 text-green-600" />
+                    </div>
+                    <h4 className="font-semibold text-green-900">E-Mail Support</h4>
+                  </div>
+                  <p className="text-sm text-green-800 mb-3">
+                    Antwort innerhalb von 24 Stunden
+                  </p>
+                  <a
+                    href="mailto:support@ankora.de"
+                    className="text-green-600 font-medium hover:underline"
+                  >
+                    support@ankora.de
+                  </a>
+                </div>
+
+                {/* Chat Support */}
+                <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="p-2 bg-purple-100 rounded-full">
+                      <MessageCircle className="w-5 h-5 text-purple-600" />
+                    </div>
+                    <h4 className="font-semibold text-purple-900">Live Chat</h4>
+                  </div>
+                  <p className="text-sm text-purple-800 mb-3">
+                    Sofortige Hilfe von unserem Team
+                  </p>
+                  <Button size="sm" className="w-full bg-purple-600 hover:bg-purple-700">
+                    Chat starten
+                  </Button>
+                </div>
+              </div>
+
+              {/* Additional Resources */}
+              <div className="mt-6 pt-6 border-t">
+                <h4 className="font-semibold mb-3">Häufig gestellte Fragen</h4>
+                <div className="space-y-2">
+                  <a
+                    href="#"
+                    className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                  >
+                    <span className="text-sm">Wie beantrage ich eine Aufenthaltserlaubnis?</span>
+                    <ExternalLink className="w-4 h-4 text-gray-400" />
+                  </a>
+                  <a
+                    href="#"
+                    className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                  >
+                    <span className="text-sm">Wo finde ich Deutschkurse in meiner Nähe?</span>
+                    <ExternalLink className="w-4 h-4 text-gray-400" />
+                  </a>
+                  <a
+                    href="#"
+                    className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                  >
+                    <span className="text-sm">Wie eröffne ich ein Bankkonto?</span>
+                    <ExternalLink className="w-4 h-4 text-gray-400" />
+                  </a>
+                </div>
               </div>
             </CardContent>
           </Card>
