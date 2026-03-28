@@ -56,7 +56,62 @@
     "yourProgress": "İlerlemeniz",
     "checklist": "Kontrol Listesi",
     "viewAll": "Tümünü Görüntüle",
-    "noItems": "Öğe bulunamadı"
+    "noItems": "Öğe bulunamadı",
+    "profile": "Profil",
+    "location": "Konum",
+    "yourCity": "Şehriniz",
+    "notProvided": "Belirtilmedi",
+    "progress": "İlerleme",
+    "completedOf": "{total} üzerinden tamamlandı",
+    "germanCourses": {
+      "title": "Almanca Kursu Bul",
+      "description": "Almanca öğrenin ve dil becerilerinizi geliştirin",
+      "bamf": "BAMF Entegrasyon Kursları",
+      "vhs": "Halk Eğitim Merkezi (VHS)",
+      "dw": "Deutsche Welle - Ücretsiz Öğrenin"
+    },
+    "housing": {
+      "title": "Ev Arama",
+      "description": "Şehrinizde bir daire bulun"
+    },
+    "transport": {
+      "title": "Biletler ve Toplu Taşıma",
+      "description": "Toplu taşıma hakkında bilgiler",
+      "deutschlandTicket": "Deutschland-Ticket",
+      "deutschlandTicketDesc": "Ayda 49€ ile tüm Almanya'da seyahat edin (Otobüs, Tren, Bölgesel)",
+      "bahn": "Deutsche Bahn",
+      "maps": "Google Maps - Tarifeler"
+    },
+    "banks": {
+      "title": "Bankalarım",
+      "description": "Banka hesaplarınızı yönetin",
+      "add": "Ekle",
+      "noBanks": "Henüz banka hesabı eklenmedi",
+      "addBank": "Hesap kaydetmek için \"Ekle\"ye tıklayın"
+    },
+    "support": {
+      "title": "Destek ve Yardım",
+      "description": "Gerçek insanlarla konuşun - sorularınızda size yardımcı oluyoruz",
+      "phone": {
+        "title": "Telefon Desteği",
+        "hours": "Pazartesi - Cuma: 09:00 - 18:00"
+      },
+      "email": {
+        "title": "E-posta Desteği",
+        "response": "24 saat içinde yanıt"
+      },
+      "chat": {
+        "title": "Canlı Sohbet",
+        "description": "Ekibimizden anında yardım",
+        "start": "Sohbet Başlat"
+      },
+      "faq": {
+        "title": "Sıkça Sorulan Sorular",
+        "residence": "Oturma iznine nasıl başvurabilirim?",
+        "courses": "Yakınımda Almanca kurslarını nerede bulabilirim?",
+        "bank": "Nasıl banka hesabı açabilirim?"
+      }
+    }
   },
   "checklist": {
     "title": "Resmi İşlemler Kontrol Listesi",

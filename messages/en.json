@@ -56,7 +56,62 @@
     "yourProgress": "Your Progress",
     "checklist": "Checklist",
     "viewAll": "View All",
-    "noItems": "No items found"
+    "noItems": "No items found",
+    "profile": "Profile",
+    "location": "Location",
+    "yourCity": "Your City",
+    "notProvided": "Not provided",
+    "progress": "Progress",
+    "completedOf": "of {total} completed",
+    "germanCourses": {
+      "title": "Find German Courses",
+      "description": "Learn German and improve your language skills",
+      "bamf": "BAMF Integration Courses",
+      "vhs": "Adult Education Center (VHS)",
+      "dw": "Deutsche Welle - Learn for Free"
+    },
+    "housing": {
+      "title": "Housing Search",
+      "description": "Find an apartment in your city"
+    },
+    "transport": {
+      "title": "Tickets & Public Transport",
+      "description": "Information about public transportation",
+      "deutschlandTicket": "Deutschland-Ticket",
+      "deutschlandTicketDesc": "Travel all over Germany for 49€/month (Bus, Train, Regional)",
+      "bahn": "Deutsche Bahn",
+      "maps": "Google Maps - Schedules"
+    },
+    "banks": {
+      "title": "My Banks",
+      "description": "Manage your bank accounts",
+      "add": "Add",
+      "noBanks": "No bank accounts added yet",
+      "addBank": "Click \"Add\" to save an account"
+    },
+    "support": {
+      "title": "Support & Help",
+      "description": "Talk to real people - we help you with your questions",
+      "phone": {
+        "title": "Phone Support",
+        "hours": "Monday - Friday: 9:00 AM - 6:00 PM"
+      },
+      "email": {
+        "title": "Email Support",
+        "response": "Response within 24 hours"
+      },
+      "chat": {
+        "title": "Live Chat",
+        "description": "Immediate help from our team",
+        "start": "Start Chat"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "residence": "How do I apply for a residence permit?",
+        "courses": "Where can I find German courses near me?",
+        "bank": "How do I open a bank account?"
+      }
+    }
   },
   "checklist": {
     "title": "Authority Checklist",

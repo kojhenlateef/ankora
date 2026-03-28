@@ -188,7 +188,7 @@ export function NewDashboardClient({
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium text-gray-600">
                 <User className="w-4 h-4 inline mr-2" />
-                Profil
+                {t('dashboard.profile')}
               </CardTitle>
               <Button variant="ghost" size="sm">
                 <Edit className="w-4 h-4" />
@@ -205,12 +205,12 @@ export function NewDashboardClient({
             <CardHeader className="pb-2">
               <CardTitle className="text-sm font-medium text-gray-600">
                 <MapPin className="w-4 h-4 inline mr-2" />
-                Standort
+                {t('dashboard.location')}
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">{profile.city_plz || 'Nicht angegeben'}</div>
-              <p className="text-sm text-gray-500 mt-1">Deine Stadt</p>
+              <div className="text-2xl font-bold">{profile.city_plz || t('dashboard.notProvided')}</div>
+              <p className="text-sm text-gray-500 mt-1">{t('dashboard.yourCity')}</p>
             </CardContent>
           </Card>
 
@@ -219,14 +219,14 @@ export function NewDashboardClient({
             <CardHeader className="pb-2">
               <CardTitle className="text-sm font-medium text-gray-600">
                 <CheckSquare className="w-4 h-4 inline mr-2" />
-                Fortschritt
+                {t('dashboard.progress')}
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{Math.round(progressPercentage)}%</div>
               <Progress value={progressPercentage} className="h-2 mt-2" />
               <p className="text-sm text-gray-500 mt-1">
-                {completedCount} von {totalCount} erledigt
+                {completedCount} {t('dashboard.completedOf', { total: totalCount })}
               </p>
             </CardContent>
           </Card>
@@ -240,9 +240,9 @@ export function NewDashboardClient({
             <CardHeader>
               <CardTitle className="flex items-center">
                 <GraduationCap className="w-5 h-5 mr-2 text-primary" />
-                Deutschkurs finden
+                {t('dashboard.germanCourses.title')}
               </CardTitle>
-              <CardDescription>Lerne Deutsch und verbessere deine Sprachkenntnisse</CardDescription>
+              <CardDescription>{t('dashboard.germanCourses.description')}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-3">
               <a
@@ -251,7 +251,7 @@ export function NewDashboardClient({
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <span className="font-medium">BAMF Integrationskurse</span>
+                <span className="font-medium">{t('dashboard.germanCourses.bamf')}</span>
                 <ExternalLink className="w-4 h-4 text-gray-400" />
               </a>
               <a
@@ -260,7 +260,7 @@ export function NewDashboardClient({
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <span className="font-medium">Volkshochschule (VHS)</span>
+                <span className="font-medium">{t('dashboard.germanCourses.vhs')}</span>
                 <ExternalLink className="w-4 h-4 text-gray-400" />
               </a>
               <a
@@ -269,7 +269,7 @@ export function NewDashboardClient({
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <span className="font-medium">Deutsche Welle - Kostenlos lernen</span>
+                <span className="font-medium">{t('dashboard.germanCourses.dw')}</span>
                 <ExternalLink className="w-4 h-4 text-gray-400" />
               </a>
             </CardContent>
@@ -280,9 +280,9 @@ export function NewDashboardClient({
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Home className="w-5 h-5 mr-2 text-primary" />
-                Wohnungssuche
+                {t('dashboard.housing.title')}
               </CardTitle>
-              <CardDescription>Finde eine Wohnung in deiner Stadt</CardDescription>
+              <CardDescription>{t('dashboard.housing.description')}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-3">
               <a
@@ -320,15 +320,15 @@ export function NewDashboardClient({
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Ticket className="w-5 h-5 mr-2 text-primary" />
-                Fahrkarten & ÖPNV
+                {t('dashboard.transport.title')}
               </CardTitle>
-              <CardDescription>Informationen zu öffentlichen Verkehrsmitteln</CardDescription>
+              <CardDescription>{t('dashboard.transport.description')}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-3">
               <div className="p-3 bg-blue-50 rounded-lg border border-blue-200">
-                <h4 className="font-semibold text-blue-900 mb-2">Deutschland-Ticket</h4>
+                <h4 className="font-semibold text-blue-900 mb-2">{t('dashboard.transport.deutschlandTicket')}</h4>
                 <p className="text-sm text-blue-800">
-                  Für 49€/Monat in ganz Deutschland fahren (Bus, Bahn, Regional)
+                  {t('dashboard.transport.deutschlandTicketDesc')}
                 </p>
               </div>
               <a
@@ -337,7 +337,7 @@ export function NewDashboardClient({
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <span className="font-medium">Deutsche Bahn</span>
+                <span className="font-medium">{t('dashboard.transport.bahn')}</span>
                 <ExternalLink className="w-4 h-4 text-gray-400" />
               </a>
               <a
@@ -346,7 +346,7 @@ export function NewDashboardClient({
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <span className="font-medium">Google Maps - Fahrpläne</span>
+                <span className="font-medium">{t('dashboard.transport.maps')}</span>
                 <ExternalLink className="w-4 h-4 text-gray-400" />
               </a>
             </CardContent>
@@ -358,20 +358,20 @@ export function NewDashboardClient({
               <div>
                 <CardTitle className="flex items-center">
                   <CreditCard className="w-5 h-5 mr-2 text-primary" />
-                  Meine Banken
+                  {t('dashboard.banks.title')}
                 </CardTitle>
-                <CardDescription>Verwalte deine Bankkonten</CardDescription>
+                <CardDescription>{t('dashboard.banks.description')}</CardDescription>
               </div>
               <Button size="sm">
                 <Plus className="w-4 h-4 mr-1" />
-                Hinzufügen
+                {t('dashboard.banks.add')}
               </Button>
             </CardHeader>
             <CardContent>
               <div className="text-center py-8 text-gray-500">
                 <CreditCard className="w-12 h-12 mx-auto mb-3 text-gray-300" />
-                <p className="text-sm">Noch keine Bankkonten hinzugefügt</p>
-                <p className="text-xs mt-1">Klicke auf "Hinzufügen" um ein Konto zu speichern</p>
+                <p className="text-sm">{t('dashboard.banks.noBanks')}</p>
+                <p className="text-xs mt-1">{t('dashboard.banks.addBank')}</p>
               </div>
             </CardContent>
           </Card>
@@ -381,10 +381,10 @@ export function NewDashboardClient({
             <CardHeader>
               <CardTitle className="flex items-center">
                 <MessageCircle className="w-5 h-5 mr-2 text-primary" />
-                Support & Hilfe
+                {t('dashboard.support.title')}
               </CardTitle>
               <CardDescription>
-                Sprich mit echten Menschen - wir helfen dir bei deinen Fragen
+                {t('dashboard.support.description')}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -395,10 +395,10 @@ export function NewDashboardClient({
                     <div className="p-2 bg-blue-100 rounded-full">
                       <Phone className="w-5 h-5 text-blue-600" />
                     </div>
-                    <h4 className="font-semibold text-blue-900">Telefonische Beratung</h4>
+                    <h4 className="font-semibold text-blue-900">{t('dashboard.support.phone.title')}</h4>
                   </div>
                   <p className="text-sm text-blue-800 mb-3">
-                    Montag - Freitag: 9:00 - 18:00 Uhr
+                    {t('dashboard.support.phone.hours')}
                   </p>
                   <a
                     href="tel:+491234567890"
@@ -414,10 +414,10 @@ export function NewDashboardClient({
                     <div className="p-2 bg-green-100 rounded-full">
                       <Mail className="w-5 h-5 text-green-600" />
                     </div>
-                    <h4 className="font-semibold text-green-900">E-Mail Support</h4>
+                    <h4 className="font-semibold text-green-900">{t('dashboard.support.email.title')}</h4>
                   </div>
                   <p className="text-sm text-green-800 mb-3">
-                    Antwort innerhalb von 24 Stunden
+                    {t('dashboard.support.email.response')}
                   </p>
                   <a
                     href="mailto:support@ankora.de"
@@ -433,40 +433,40 @@ export function NewDashboardClient({
                     <div className="p-2 bg-purple-100 rounded-full">
                       <MessageCircle className="w-5 h-5 text-purple-600" />
                     </div>
-                    <h4 className="font-semibold text-purple-900">Live Chat</h4>
+                    <h4 className="font-semibold text-purple-900">{t('dashboard.support.chat.title')}</h4>
                   </div>
                   <p className="text-sm text-purple-800 mb-3">
-                    Sofortige Hilfe von unserem Team
+                    {t('dashboard.support.chat.description')}
                   </p>
                   <Button size="sm" className="w-full bg-purple-600 hover:bg-purple-700">
-                    Chat starten
+                    {t('dashboard.support.chat.start')}
                   </Button>
                 </div>
               </div>
 
               {/* Additional Resources */}
               <div className="mt-6 pt-6 border-t">
-                <h4 className="font-semibold mb-3">Häufig gestellte Fragen</h4>
+                <h4 className="font-semibold mb-3">{t('dashboard.support.faq.title')}</h4>
                 <div className="space-y-2">
                   <a
                     href="#"
                     className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                   >
-                    <span className="text-sm">Wie beantrage ich eine Aufenthaltserlaubnis?</span>
+                    <span className="text-sm">{t('dashboard.support.faq.residence')}</span>
                     <ExternalLink className="w-4 h-4 text-gray-400" />
                   </a>
                   <a
                     href="#"
                     className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                   >
-                    <span className="text-sm">Wo finde ich Deutschkurse in meiner Nähe?</span>
+                    <span className="text-sm">{t('dashboard.support.faq.courses')}</span>
                     <ExternalLink className="w-4 h-4 text-gray-400" />
                   </a>
                   <a
                     href="#"
                     className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                   >
-                    <span className="text-sm">Wie eröffne ich ein Bankkonto?</span>
+                    <span className="text-sm">{t('dashboard.support.faq.bank')}</span>
                     <ExternalLink className="w-4 h-4 text-gray-400" />
                   </a>
                 </div>
@@ -483,7 +483,7 @@ export function NewDashboardClient({
               {t('checklist.title')}
             </CardTitle>
             <CardDescription>
-              {getStatusLabel(profile.status)} - {completedCount}/{totalCount} erledigt
+              {getStatusLabel(profile.status)} - {completedCount}/{totalCount} {t('checklist.completed').toLowerCase()}
             </CardDescription>
           </CardHeader>
           <CardContent>

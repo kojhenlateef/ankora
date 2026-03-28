@@ -56,7 +56,62 @@
     "yourProgress": "Dein Fortschritt",
     "checklist": "Checkliste",
     "viewAll": "Alle anzeigen",
-    "noItems": "Keine Einträge gefunden"
+    "noItems": "Keine Einträge gefunden",
+    "profile": "Profil",
+    "location": "Standort",
+    "yourCity": "Deine Stadt",
+    "notProvided": "Nicht angegeben",
+    "progress": "Fortschritt",
+    "completedOf": "von {total} erledigt",
+    "germanCourses": {
+      "title": "Deutschkurs finden",
+      "description": "Lerne Deutsch und verbessere deine Sprachkenntnisse",
+      "bamf": "BAMF Integrationskurse",
+      "vhs": "Volkshochschule (VHS)",
+      "dw": "Deutsche Welle - Kostenlos lernen"
+    },
+    "housing": {
+      "title": "Wohnungssuche",
+      "description": "Finde eine Wohnung in deiner Stadt"
+    },
+    "transport": {
+      "title": "Fahrkarten & ÖPNV",
+      "description": "Informationen zu öffentlichen Verkehrsmitteln",
+      "deutschlandTicket": "Deutschland-Ticket",
+      "deutschlandTicketDesc": "Für 49€/Monat in ganz Deutschland fahren (Bus, Bahn, Regional)",
+      "bahn": "Deutsche Bahn",
+      "maps": "Google Maps - Fahrpläne"
+    },
+    "banks": {
+      "title": "Meine Banken",
+      "description": "Verwalte deine Bankkonten",
+      "add": "Hinzufügen",
+      "noBanks": "Noch keine Bankkonten hinzugefügt",
+      "addBank": "Klicke auf \"Hinzufügen\" um ein Konto zu speichern"
+    },
+    "support": {
+      "title": "Support & Hilfe",
+      "description": "Sprich mit echten Menschen - wir helfen dir bei deinen Fragen",
+      "phone": {
+        "title": "Telefonische Beratung",
+        "hours": "Montag - Freitag: 9:00 - 18:00 Uhr"
+      },
+      "email": {
+        "title": "E-Mail Support",
+        "response": "Antwort innerhalb von 24 Stunden"
+      },
+      "chat": {
+        "title": "Live Chat",
+        "description": "Sofortige Hilfe von unserem Team",
+        "start": "Chat starten"
+      },
+      "faq": {
+        "title": "Häufig gestellte Fragen",
+        "residence": "Wie beantrage ich eine Aufenthaltserlaubnis?",
+        "courses": "Wo finde ich Deutschkurse in meiner Nähe?",
+        "bank": "Wie eröffne ich ein Bankkonto?"
+      }
+    }
   },
   "checklist": {
     "title": "Behörden-Checkliste",

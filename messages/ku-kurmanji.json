@@ -56,7 +56,62 @@
     "yourProgress": "Pêşkeftina te",
     "checklist": "Lîsteya kontrolkirinê",
     "viewAll": "Hemûyan bibîne",
-    "noItems": "Tiştek nehat dîtin"
+    "noItems": "Tiştek nehat dîtin",
+    "profile": "Profîl",
+    "location": "Cih",
+    "yourCity": "Bajara te",
+    "notProvided": "Nehatiye diyarkirin",
+    "progress": "Pêşketin",
+    "completedOf": "ji {total} qediya",
+    "germanCourses": {
+      "title": "Dersên Almanî bibîne",
+      "description": "Almanî fêr bibe û jêhatîbûna zimanî ya xwe baştir bike",
+      "bamf": "Dersên Entegrasyonê yên BAMF",
+      "vhs": "Navenda Perwerdehiya Mezinên (VHS)",
+      "dw": "Deutsche Welle - Belaş fêr bibe"
+    },
+    "housing": {
+      "title": "Lêgerîna xaniyan",
+      "description": "Li bajara xwe apartmanek bibîne"
+    },
+    "transport": {
+      "title": "Bilêt û veguhestina giştî",
+      "description": "Agahî der barê veguhestina giştî de",
+      "deutschlandTicket": "Bilêta Almanyayê",
+      "deutschlandTicketDesc": "Ji bo 49€/mehî di hemû Almanyayê de bigerî (Otobûs, Trên, Herêmî)",
+      "bahn": "Deutsche Bahn",
+      "maps": "Google Maps - Dema seferan"
+    },
+    "banks": {
+      "title": "Bankayên min",
+      "description": "Hesabên xwe yên bankayê bi rê ve bibe",
+      "add": "Zêdekirin",
+      "noBanks": "Hêj hesabek bankayê nehatiye zêdekirin",
+      "addBank": "Ji bo tomarkirina hesabê li ser \"Zêdekirin\" bike"
+    },
+    "support": {
+      "title": "Piştgirî û Alîkarî",
+      "description": "Bi kesên rastîn re bipeyive - em di pirsên te de alîkariya te dikin",
+      "phone": {
+        "title": "Piştgiriya telefonî",
+        "hours": "Duşem - În: 9:00 sibê - 6:00 êvarê"
+      },
+      "email": {
+        "title": "Piştgiriya e-posteyê",
+        "response": "Bersiv di nav 24 saetiyan de"
+      },
+      "chat": {
+        "title": "Sohbeta zindî",
+        "description": "Alîkariya bilez ji tîma me",
+        "start": "Sohbetê dest pê bike"
+      },
+      "faq": {
+        "title": "Pirsên pir pirsiyar",
+        "residence": "Ez çawa daxwaza destûra niştecihbûnê bikim?",
+        "courses": "Ez dikarin li ku dersên Almanî li nêzîkiya xwe bibînim?",
+        "bank": "Ez çawa hesabek bankayê vekim?"
+      }
+    }
   },
   "checklist": {
     "title": "Lîsteya karûbarên fermî",
